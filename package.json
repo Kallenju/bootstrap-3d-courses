@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "description": "This is my pet project to learn Bootstrap 3. I'm using it to learn Bootstrap 3 and to create a simple website for some 3D courses.",
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "bootstrap": "^4.6.1",
+    "core-js": "^3.23.3",
+    "postcss-css-variables": "^0.18.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "babel-loader": "^8.2.5",
+    "browser-sync": "^2.27.10",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "browserslist": {
+    "modern": [
+      "defaults and supports css-variables"
+    ],
+    "legacy": [
+      "last 2 versions",
+      ">0.02%",
+      "supports flexbox",
+      "not supports es6-module",
+      "not supports css-variables",
+      "not IE < 11",
+      "not IE_mob < 11"
+    ]
+  },
+  "scripts": {
+    "makeCSS:modern": "postcss ./styles/style.css -o ./styles/style.css",
+    "makeCSS:legacy": "postcss ./styles --dir ./styles/stylesForLegacyBrowsers",
+    "buildJS:modern": "webpack --env browsers=modern",
+    "buildJS:legacy": "webpack --env browsers=legacy",
+    "localServer": "browser-sync start --config ./browsersync/bs-config.js"
+  }
+}
