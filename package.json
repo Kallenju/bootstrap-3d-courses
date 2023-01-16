@@ -1,6 +1,6 @@
 {
   "private": true,
-  "description": "This is my pet project to learn Bootstrap 3. I'm using it to learn Bootstrap 3 and to create a simple website for some 3D courses.",
+  "description": "This is my pet project to learn Bootstrap. I'm using it to learn Bootstrap 3 and to create a simple website for some 3D courses.",
   "dependencies": {
     "autoprefixer": "^10.4.7",
     "bootstrap": "^4.6.1",
